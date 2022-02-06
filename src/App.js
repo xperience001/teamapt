@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="Apps">
       <header className="App-header">
-        <nav className='logo'>logo</nav>
+        <Link to="first" style={{ textDecoration: 'none' }} to="/"><nav className='logo'><img style={{ height: '3rem', width: '3rem', marginLeft: '2rem', marginTop: '2rem' }} src={second} /></nav></Link>
         <div className='socio'>
           <nav>Facebook</nav>
           <nav>LinkedIn</nav>
@@ -23,21 +23,21 @@ function App() {
       </header>
       <h1 className='sectors'>OUR SECTORS</h1>
       <div className='frames' style={{ marginTop: '-2rem' }}>
-        <Link to="/view"><div className='imgdiv'>
+        <Link to="first" style={{ textDecoration: 'none' }} to="/view"><div className='imgdiv'>
           <span className='num'>
             <h1 className='numnum'>01</h1>
             <h2 className='numword'>AX CARE</h2>
           </span>
           <img src={first} /></div></Link>
-        <Link to="/view"><div className='imgdiv'><span className='num'>           <h1 className='numnum'>02</h1>
+        <Link to="first" style={{ textDecoration: 'none' }} to="/view"><div className='imgdiv'><span className='num'>           <h1 className='numnum'>02</h1>
           <h2 className='numword'>AX HOTELS</h2></span><img src={second} /></div></Link>
-        <Link to="/view"><div className='imgdiv'><span className='num'>           <h1 className='numnum'>03</h1>
+        <Link to="first" style={{ textDecoration: 'none' }} to="/view"><div className='imgdiv'><span className='num'>           <h1 className='numnum'>03</h1>
           <h2 className='numword'>AX LOUNGE</h2></span><img src={third} /></div></Link>
-        <Link to="/view"><div className='imgdiv'><span className='num'>           <h1 className='numnum'>04</h1>
+        <Link to="first" style={{ textDecoration: 'none' }} to="/view"><div className='imgdiv'><span className='num'>           <h1 className='numnum'>04</h1>
           <h2 className='numword'>AX SUITES</h2></span><img src={first} /></div></Link>
-        <Link to="/view"><div className='imgdiv'><span className='num'>           <h1 className='numnum'>05</h1>
+        <Link to="first" style={{ textDecoration: 'none' }} to="/view"><div className='imgdiv'><span className='num'>           <h1 className='numnum'>05</h1>
           <h2 className='numword'>AX GUESTS</h2></span><img src={fourth} /></div></Link>
-        <Link to="/view"><div className='imgdiv'><span className='num'>           <h1 className='numnum'>06</h1>
+        <Link to="first" style={{ textDecoration: 'none' }} to="/view"><div className='imgdiv'><span className='num'>           <h1 className='numnum'>06</h1>
           <h2 className='numword'>AX LAND</h2></span><img src={fifth} /></div></Link >
       </div>
     </div>

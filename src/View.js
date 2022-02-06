@@ -12,7 +12,8 @@ function App() {
         <div className="App">
 
             <header className="App-header">
-                <nav className='logo'>logo</nav>
+                <Link to="first" style={{ textDecoration: 'none' }} to="/"><nav className='logo'><img style={{ height: '3rem', width: '3rem', marginLeft: '2rem', marginTop: '2rem' }} src={second} /></nav></Link>
+
                 <div className='socio'>
                     <nav>Facebook</nav>
                     <nav>LinkedIn</nav>
@@ -24,13 +25,25 @@ function App() {
             </header>
             <div className='cont'>
                 <div className='left'>
-                    <div className='x'>X</div>
+                    <Link to="first" style={{ textDecoration: 'none' }} to="/"><div className='x'>X</div></Link>
                     <h2 className='xx'>02</h2>
-                    <h1 className='xxx'>AX HOTELS</h1>
-                    <h2 className='xxxx'>Emerging stronger</h2>
+                    <div className='space`'>
+
+                        <h1 className='xxx'>AX HOTELS</h1>
+                        <div>
+
+                            <h2 className='xxxx'>Emerging stronger</h2>
+                            <Link to="first" style={{ textDecoration: 'none' }} to="/"><div className='slo'>
+                                <div className='lo'>a</div>
+                                <div className='lo'>b</div>
+                                <div className='dis'><p>DISCOVER</p></div>
+                            </div></Link>
+                        </div>
+                    </div>
+
                 </div>
                 <div className='right'>
-                    <img src={first} /></div>
+                    <img src={second} /></div>
             </div>
 
 
