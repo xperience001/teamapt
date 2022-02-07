@@ -38,7 +38,8 @@ h2 {
       background-color: rgb(9, 52, 102);
       color: white;
       border-radius: 15px;
-      padding: 10px 20px;
+      padding: 10px 0px;
+      margin-right: 2rem;
       width: $elementWidth;
       font-size: 16px;
     }
@@ -49,6 +50,7 @@ h2 {
   }
 
   .sectors {
+    margin-top: -2rem;
     margin-bottom: 8vh;
     font-size: clamp(140px, 12vw, 190px);
     color: rgb(9, 52, 102);
@@ -65,13 +67,26 @@ h2 {
     }
   }
 
+    @keyframes frameSlide {
+    0% {
+      transform: translateY(1000px);
+      line-height: 0;
+    }
+
+    100% {
+      transform: translateY(0px);
+      line-height: 1;
+    }
+  }
+
   .frames {
     display: flex;
     justify-content: center;
-    transition: all 0.7s ease;
+    transition: all 0.9s ease;
     width: fit-content;
     margin: auto;
-
+    animation: frameSlide 0.8s ease;
+    overflow: hidden;
     .imgdiv {
       display: flex;
       gap: .15rem;
@@ -93,7 +108,8 @@ h2 {
           font-size: $numberLargeFontSize;
         }
         .numword {
-          font-size: 40px;
+          line-height: 1;
+          font-size: 35px;
         }
         & > * {
           margin: 5px;
@@ -118,6 +134,11 @@ h2 {
             animation: numSlide 0.8s ease;
             overflow: hidden;
           }
+          .numword {
+            animation: numSlide 0.8s ease;
+            overflow: hidden;
+          }
+          
         }
 
         .img {

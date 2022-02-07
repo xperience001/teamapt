@@ -1,5 +1,12 @@
+$elementWidth: 12vw;
+$numberLargeFontSize: 100px;
+h1,
+h2 {
+  margin: 0;
+}
+
 .App {
-  text-align: center;
+//   text-align: center;
   background-color: rgb(9, 52, 102);
   height: 100vh;
 
@@ -30,18 +37,41 @@
     justify-content: center;
     background-color: white;
     color: rgb(9, 52, 102);
-    border-radius: 15px;
-    margin-right: 43px;
-    height: 1.7rem;
-    width: 8rem;
-    font-size: small;
+    // border-radius: 15px;
+    // margin-right: 43px;
+    // height: 1.7rem;
+    // width: 8rem;
+    // font-size: small;
     z-index: 100;
+    border-radius: 15px;
+    padding: 10px 0px;
+    margin-right: 2rem;
+    width: $elementWidth;
+    font-size: 16px;
   }
 }
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+    @keyframes numSlide {
+    0% {
+      transform: translateY($numberLargeFontSize);
+      line-height: 0;
+    }
+
+    100% {
+      transform: translateY(0px);
+      line-height: 1;
+    }
+  }
 
 .cont {
     width: 100vw;
     display: flex;
+        transition: all 0.7s ease;
+
 
     .left {
         flex: .9;
@@ -81,14 +111,19 @@
             width: 5rem;
             margin-top: -6rem;
             margin-left: 15rem;
+            animation: numSlide 0.8s ease;
+            // overflow: hidden;
+
         }
 
         .xxxx {
             bottom: 5rem;
-            margin-top: 11rem;
+            margin-top: 17rem;
             margin-left: 15rem;
             width: 5rem;
             color: white;
+            animation: numSlide 0.8s ease;
+    
         }
 
         .slo {
@@ -96,6 +131,11 @@
             margin-top: -4.5rem;
             margin-left: 41rem;
             gap: 2rem;
+    animation: numSlide 0.8s ease;
+        transition: all 0.7s ease;
+        
+
+
 
             .lo {
                 display: flex;
